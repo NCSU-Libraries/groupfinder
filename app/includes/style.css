@@ -1,0 +1,597 @@
+/* begin Eric Meyer reset css*/
+/* source: http://meyerweb.com/eric/tools/css/reset/ */
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end Eric Meyer reset css */
+
+/* global styles */
+
+html, body {
+	background-color: #CCC;
+}
+
+#doc {
+	width: 960px;
+	margin: 0 auto;
+	background: url("images/logo_background.png");
+}
+
+#eboard #activities {
+	background: url("images/logo_background.png");
+}
+
+a, a:hover, a:visited {
+	outline: none;
+	color: #413AAF;
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 150%;
+	margin-bottom: 5px;
+	line-height: 20px;
+}
+
+h2.error {
+	background-color: #FFFF00;
+	text-align: center;
+	padding: 20px;
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 125%;
+	line-height: 25px;
+	margin: 0;
+}
+
+h3.floorHeader {
+	margin: 10px 0 0 0;
+}
+
+
+
+.access {
+	display: none;
+}
+
+
+
+/* page header styles */
+#administration, #credentials {
+	font-size: 12px;
+}
+
+#administration {
+	width: 50%;
+	float: left;
+}
+
+#administration li {
+	display: inline;
+	font-weight: bold;
+	background-color: yellow;
+	padding: 2px;
+}
+
+tr.enabled td {
+	color: #000;
+}
+
+tr.disabled td {
+	color: #CCC;
+}
+
+#branding {
+	font-size: 12px;
+	font-weight: bold;
+	color: #413AAF;
+	border-bottom: 1px solid #352726;
+	overflow: auto;
+	width: 100%;
+	_width: 100%;
+	height: 90px;
+}
+
+#branding h1 {
+	width: 75%;
+	float: right;
+	padding: 0;
+	margin-right: 5px;
+	font-size: 400%;
+	text-align: right;
+	border: none;
+	height: 75px;
+	line-height: 75px;
+}
+
+#branding a {
+	display: block;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+#branding img {
+	width: 75px;
+	height: 75px;
+}
+
+
+#credentials {
+	float: right;
+}
+
+#credentials a {
+	font-weight: bold;
+}
+
+#activityInput {
+	clear: both;
+}
+
+#activityInputBlock {
+	clear: both;
+	padding: 5px;
+	border-bottom: 1px solid #352726;
+	position: relative;
+}
+
+#activityInputBlock  {
+	font-size: 25px;
+}
+
+
+
+#activityInputBox {
+	width: 945px;
+	height: 35px;
+	margin: 0 0 5px 0;
+	font-size: 25px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	color: #CCC;
+}
+
+#locationPrompt {
+	color: #413AAF;
+	cursor: pointer;
+	padding-left: 25px;
+	background: url("images/Add.png") no-repeat center left;
+	display: block;
+	float: left;
+	width: 500px;
+}
+
+
+
+#form_submit {
+	height: 35px;
+	line-height: 35px;
+}
+
+html>body #form_submit {
+	*height: 50px;
+	*line-height: 50px;
+	*padding-bottom: 10px;
+}
+
+label img {
+	display: none;
+	height: 1px;
+	width: 1px;
+}
+
+button {
+	width: 125px;
+	font-size: 25px;
+	display: block;
+	float: right;
+}
+
+#locationList {
+	width: 450px;
+	float: left;
+}
+
+
+#locationSelector li {
+	font-size: 12px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+
+#locationSelector li:hover {
+	background-color: #EEE;
+}
+
+
+#locationDirections {
+	width: 350px;
+	height: 100%;
+	float: right;
+}
+
+div.directions {
+	display: none;
+}
+
+div.directions:first-child {
+	display: block;
+}
+
+div.directions img {
+	display: block;
+	margin: 5px auto;
+}
+
+
+#ft li {
+	font-weight: bold;
+	display: inline;
+	margin: 0 5px;
+}
+
+
+
+#activityDisplayBlock {
+	clear: both;
+	border-top: 1px solid #CCC;
+}
+
+div.activity {
+	border-bottom: 1px solid #CCC;
+	position: relative;
+	padding: 5px;
+	margin: 5px 0;
+	overflow: auto;
+}
+
+p.creator {
+	font-size: 110%;
+	margin: 0 0 0 10px;
+	width: 500px;
+	float: left;
+}
+
+span.delimiter {
+	font-weight: normal;
+}
+
+span.activityCreator {
+	color: #333;
+	width: 200px;
+}
+
+span.activityTime {	
+	color: #999;
+	width: 75px;
+	font-weight: normal;
+}
+
+p.activityTools {
+	display: none;
+	width: 175px;
+	_text-align: right;
+	_display: block;
+	_float: right;
+}
+
+p.activityTools .ui-icon {
+	float: left;
+	position: relative;
+	top: 4px;
+}
+
+.ui-icon-info {
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+
+
+div.activity:hover  p.activityTools {
+	display: block;
+	text-align: right;
+	float: right;
+}
+
+
+
+a.report {
+	font-weight: bold; 
+	float: left;
+	margin-right: 10px;
+}
+
+a.delete {
+	font-weight: bold; 
+	float: left;
+}
+
+
+div.activity:hover {
+	background-color: #EEE;
+}
+
+#gfPromo {
+	margin: 5px;
+	padding: 5px;
+	font-size: 110%;
+	background-color: #E5E1D0;
+	clear: both;
+}
+
+#gfPromo li {
+	margin: 5px 50px;
+	list-style-type: disc;
+}
+
+#faq li {
+	list-style-type: disc;
+	margin: 2px 0 0 10px;
+}
+
+div.promo {
+	background-color:#FFF;
+}
+
+
+#activityThankYou ul {
+	margin-left: 20px;
+	list-style-type: disc;
+}
+
+
+
+#source {display: none;}
+
+/* eboard styles */
+
+#eboard { 
+	background: url("images/logo_background.png");
+}
+
+
+#eboard_header {
+	background-color: #FFF;
+	padding: 5px;
+	height: 100px;
+	line-height: 100px;
+	border-bottom: 5px solid #413AAF; 
+}
+
+#eboard_header img {
+	height: 100px;
+	width: 100px;
+	float: right;
+}
+
+#eboard_header h1 {
+	text-align: left;
+	width: 1000px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	float: left;
+	font-size: 80px;
+}
+
+#eboard_header ul {
+	text-align: right;
+	width: 400px;
+	margin: 5px 20px 0 0;
+	line-height: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	float: right;
+}
+
+#eboardLink {
+	font-size: 300%;
+	width: 700px;
+	margin: 0 20px 0 0;
+	text-align: right;
+	float: left;
+	line-height: 100px;
+	color: blue;
+	border: 1px solid red;
+	display: none;
+}
+
+#eboard span.activityLocation {
+	color: #000;
+}
+
+#eboard span.activityTime {
+	display: block;
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+#eboard span.activityDescription {
+	font-weight: bold;
+}
+
+#eboard span.credits {
+	font-size: 80%;
+	font-weight: bold;
+	color: #333;
+	float: right;
+}
+
+#eboard #activities div {
+	border: 1px solid #413AAF;
+}
+
+/* 1 - 5 activities */
+
+#eboard div.largest {
+	padding: 5px;
+	background-color: #FFF;
+	margin: 15px;
+	width: 900px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 55px;
+}
+
+/* 6 - 10 activities */
+
+#eboard div.larger {
+	padding: 5px;
+	background-color: #FFF;
+	margin: 15px;
+	width: 900px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 35px;
+}
+
+/* 11 - 15 activities */
+
+#eboard div.large {
+	padding: 5px;
+	background-color: #FFF;
+	margin: 15px;
+	width: 900px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 25px;
+}
+
+/* 16 - 20 activities */
+
+#eboard div.medium {
+	padding: 5px;
+	background-color: #FFF;
+	margin: 10px;
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 26px;
+}
+
+/* 21 - 25 activities */
+
+#eboard div.small {
+	padding: 5px;
+	background-color: #FFF;
+	margin: 10px;
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 21px;
+}
+
+/* 25 + activities */
+#eboard div.smallest {
+	padding: 5px;
+	background-color: #FFF;
+	margin: 10px;
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+}
+
+#popups div	{
+	display: none;
+}
+/*admin interface styles*/
+
+#admin td, #stats td {
+	padding: 2px; 
+	border: 1px solid #CCC; 
+	max-width: 250px; 
+	vertical-align: top;
+}
+
+#admin td.header, #stats td.header {
+	font-weight: bold;
+}
+#admin tr.enabled td {
+	color: #000; 
+}
+#admin tr.disabled td {
+	color: #CCC; 
+}
+
+#stats, #admin {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFF;
+	padding: 5px;
+}
+
+#stats h1, #admin h1 {
+	margin: 0;
+}
+
+#stats table {
+	margin-top: 10px;
+}
+
+div.chart {
+margin: 50px 0;
+}
