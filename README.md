@@ -1,3 +1,7 @@
+Notice
+======
+GroupFinder was decommissioned at NCSU on December 17, 2015 and is no longer being supported. 
+
 GroupFinder
 ===========
 
