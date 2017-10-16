@@ -38,17 +38,3 @@ Later on, add your own authentication code here if desired.
 7. Post another test post. Mouse over it and choose 'Report.' You should receive an email. This is a feature so that people can report abusive uses of the system for administrative review.
 
 8. View /groupfinder/eboard.php. This is a file for read-only display of activities on a large display. It was set up for use in Safari on a 1440x900 display. 
-
-
-Notes
-===========
-
-See http://www.lib.ncsu.edu/groupfinder for a production example.
-				
-Adding additional locations or removing the sample locations must be done with SQL; there is no interface.
-		
-
-
-
-	
-
